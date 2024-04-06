@@ -1,8 +1,16 @@
+# Зависимости и запуск
+```
 pip install flask
 pip install xmltodict
 pip install xmlschema
 pip install requests
+```
+1) Запускаться с app.py, тестовые запросы есть в requester.py
+2) Get_Entrant_List.xml - пример валидного входа для xml->json
+3) App_info.json - пример валидного входа для json->xml
+4) По умолчанию включена валидация XML, поэтому в невалидных случаях сервер возвращает ошибку
 
+# Уточнения
 1) Добавил в JSON поля для FreeEducationReason (free_education_reason_id).
 Данный элемент заполняется только в случае, когда "is_foreigner": true
 
