@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageData>
+    <IdJwt>12345</IdJwt>
+    <EntityAction>Campaign_Add</EntityAction>
+    <SuccessResultList>
+        <Entrant>
+            <IdObject>1</IdObject>
+            <Guid>123e4567-e89b-12d3-a456-42661417400</Guid>
+            <Snils>12345678901</Snils>
+            <IdGender>1</IdGender>
+            <Birthday>2000-01-01</Birthday>
+            <Birthplace>Москва</Birthplace>
+            <Phone>+7900123456</Phone>
+            <Email>example@example.com</Email>
+            <AvailabilityEduDoc>true</AvailabilityEduDoc>
+            <DateAvailabilityEduDoc>2024-04-06T15:04:05+03:00</DateAvailabilityEduDoc>
+            <Surname>Иванов</Surname>
+            <Name>Иван</Name>
+            <Patronymic>Иванович</Patronymic>
+            <IdOksm>1</IdOksm>
+            <FreeEducationReason>
+                <IdFreeEducationReason>1</IdFreeEducationReason>
+                <IdOksmFreeEducationReason>1</IdOksmFreeEducationReason>
+            </FreeEducationReason>
+            <AddressList>
+                <Address>
+                    <IsRegistration>true</IsRegistration>
+                    <FullAddr>Москва, ул. Ленина, д. 1</FullAddr>
+                    <IdRegion>1</IdRegion>
+                    <City>Москва</City>
+                </Address>
+                <Address>
+                    <IsRegistration>false</IsRegistration>
+                    <FullAddr>Москва, ул. Ленина, д. 2</FullAddr>
+                    <IdRegion>1</IdRegion>
+                    <City>Москва</City>
+                </Address>
+            </AddressList>
+            <DocumentList>
+                <Document>
+                    <Guid>123e4567-e89b-12d3-a456-42661417401</Guid>
+                    <FileHash>abcdef1234567890abcdef1234567890</FileHash>
+                    <IdDocumentType>1</IdDocumentType>
+                    <DocName>Паспорт</DocName>
+                    <DocSeries>1234</DocSeries>
+                    <DocNumber>123456</DocNumber>
+                    <IssueDate>2020-01-01</IssueDate>
+                    <DocOrganization>МВД России</DocOrganization>
+                    <IdCheckStatus>1</IdCheckStatus>
+                    <IdAchievementCategory>1</IdAchievementCategory>
+                </Document>
+                <Document>
+                    <Guid>123e4567-e89b-12d3-a456-42661417401</Guid>
+                    <FileHash>abcdef1234567890abcdef1234567890</FileHash>
+                    <IdDocumentType>1</IdDocumentType>
+                    <DocName>Паспорт</DocName>
+                    <DocSeries>1234</DocSeries>
+                    <DocNumber>123456</DocNumber>
+                    <IssueDate>2020-01-01</IssueDate>
+                    <DocOrganization>МВД России</DocOrganization>
+                    <IdCheckStatus>1</IdCheckStatus>
+                    <IdAchievementCategory>1</IdAchievementCategory>
+                </Document>
+            </DocumentList>
+            <Photo>
+                <FileHash>abcdef1234567890abcdef1234567891</FileHash>
+                <Fui>12345678901234567890123456789012</Fui>
+            </Photo>
+        </Entrant>
+    </SuccessResultList>
+</PackageData>

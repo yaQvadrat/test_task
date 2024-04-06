@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntrantChoice>
+    <AddEntrant>
+        <Identification>
+            <IdDocumentType>1</IdDocumentType>
+            <DocName>Паспорт</DocName>
+            <DocSeries>1234</DocSeries>
+            <DocNumber>567890</DocNumber>
+            <IssueDate>2000-01-01</IssueDate>
+            <DocOrganization>Орган, выдавший документ</DocOrganization>
+            <Fields>
+                <!-- Здесь могут быть дополнительные поля, зависящие от типа документа -->
+            </Fields>
+        </Identification>
+        <Snils>12345678901</Snils>
+        <IdGender>1</IdGender>
+        <Birthday>1990-01-01</Birthday>
+        <Birthplace>Москва, Россия</Birthplace>
+        <Phone>+7900123456</Phone>
+        <Email>example@example.com</Email>
+        <IdOksm>1</IdOksm>
+        <FreeEducationReason>
+            <IdFreeEducationReason>1</IdFreeEducationReason>
+            <IdOksmFreeEducationReason>1</IdOksmFreeEducationReason>
+        </FreeEducationReason>
+        <AddressList>
+            <Address>
+                <IsRegistration>true</IsRegistration>
+                <FullAddr>Москва, ул. Ленина, д. 1</FullAddr>
+                <IdRegion>1</IdRegion>
+                <City>Москва</City>
+            </Address>
+            <Address>
+                <IsRegistration>false</IsRegistration>
+                <FullAddr>Санкт-Петербург, ул. Некрасова, д. 2</FullAddr>
+                <IdRegion>2</IdRegion>
+                <City>Санкт-Петербург</City>
+            </Address>
+        </AddressList>
+    </AddEntrant>
+</EntrantChoice>
