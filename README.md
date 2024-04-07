@@ -1,14 +1,20 @@
-# Зависимости и запуск
+# Зависимости
 ```
-pip install flask
-pip install xmltodict
-pip install xmlschema
-pip install requests
+pip install -r requirements.txt
 ```
-1) Запускаться с app.py, тестовые запросы есть в requester.py
-2) Get_Entrant_List.xml - пример валидного входа для xml->json
-3) App_info.json - пример валидного входа для json->xml
-4) По умолчанию включена валидация XML, поэтому в невалидных случаях сервер возвращает ошибку
+# Использование
+Запускать сервер с app.py, тестовые запросы и обработка ответа сервера есть в requester.py
+Запросы отправляются по URL с соответствующим Content-type: 
+    URL для JSON->XML: "http://hostname/json_to_xml", Content-type: "application/json"
+    URL для XML->JSON: "http://hostname/xml_to_json", Content-type: "application/xml" (XML должен отправляться в UTF-8)
+Ответы сервера в случае удачной обработки:
+    Для JSON->XML: в теле находится XML в кодировке UTF-8
+    Для XML->JSON: в теле находится JSON
+config.py файл с настройками, там можно включить/выключить валидацию XML
+По умолчанию включена валидация XML, поэтому в невалидных случаях сервер возвращает ошибку
+    Get_Entrant_List.xml - пример валидного входа для xml->json
+    App_info.json - пример валидного входа для json->xml
+
 
 # Уточнения
 1) Добавил в JSON поля для FreeEducationReason (free_education_reason_id).
@@ -28,4 +34,3 @@ has_another_living_address
 5) Опциональная валидация входного XML при конвертации XML->JSON работает тем же образом как при 
 JSON->XML, то есть при невалидном XML возвращается ошибка (418)
 
-6) XML->JSON ожидает Content-Type application/xml

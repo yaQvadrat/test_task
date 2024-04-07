@@ -1,11 +1,11 @@
-from flask import Flask, Response, request, jsonify
+from flask import Flask, Response, request
 from modules.JSONHandler import JSONHandler
 from modules.XMLHandler import XMLHandler
 from modules.XMLValidator import XMLValidator
 
 
 app = Flask(__name__)
-app.config["VALIDATE_XML"] = True
+app.config.from_pyfile("config.py")
 
 
 @app.route("/json_to_xml", methods=["POST"])
@@ -21,7 +21,7 @@ def json_to_xml():
 
 @app.route("/xml_to_json", methods=["POST"])
 def xml_to_json():
-    if request.content_type != "application/xml":
+    if request.content_type.split(";")[0] != "application/xml":
         return "Content isn't XML", 415
     xml = request.data.decode("utf-8")
     if app.config["VALIDATE_XML"]:
